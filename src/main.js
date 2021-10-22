@@ -26,3 +26,21 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+var images = new Array();
+
+function preloadImages(){
+
+    for (x=0; x < preloadImages.arguments.length; x++){
+
+         images[x] = new Image();
+
+        images[x].src = preloadImages.arguments[x];
+
+    }
+
+}
+
+preloadImages("logo.jpg", "main_bg.jpg", "body_bg.jpg", "header_bg.jpg");
+
