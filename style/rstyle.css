@@ -1,9 +1,13 @@
-/* #8ae3da - bluegrey #f2a03d - orange */
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    color: black;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat' !important;
 }
+
+
+/* #8ae3da - bluegrey #f2a03d - orange */
+
 body {
     background-color: white;
 }
