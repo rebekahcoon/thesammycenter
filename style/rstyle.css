@@ -1,10 +1,13 @@
-<<<<<<< HEAD
-/* #8ae3da - bluegrey #f2a03d - orange */
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    color: black;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat' !important;
 }
+
+
+/* #8ae3da - bluegrey #f2a03d - orange */
+
 body {
     background-color: white;
 }
@@ -23,30 +26,4 @@ body {
 .alt-blue, .alt-blue-hover:hover{color:#fff!important;background-color:#8ae3da}
 .faded {
     color:rgb(63, 61, 61)
-=======
-/* #8ae3da - bluegrey #f2a03d - orange */
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    color: black;
-}
-body {
-    background-color: white;
-}
-.blue {
-    color: #8ae3da;
-    text-shadow: 0px 1px 1px #497a75;
-
-}
-.orange {
-    color: #f2a03d;
-
-}
-.test {
-    background-color: #8ae3da;
-}
-.alt-blue, .alt-blue-hover:hover{color:#fff!important;background-color:#8ae3da}
-.faded {
-    color:rgb(63, 61, 61)
->>>>>>> 6817b252aa4823ef84e89ad6cbec6d04806fad2a
 }
