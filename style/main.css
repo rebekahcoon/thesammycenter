@@ -1,10 +1,32 @@
 * {box-sizing:border-box}
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+ody,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat ", sans-serif;}
 body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
+
+}
+
+
+#myNavbar{
+color:lightblue;
+
+
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#home {
+background-color: white;
+
+
+
+
+
 }
 
 /* Create a Parallax Effect */
