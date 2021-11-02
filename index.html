@@ -10,7 +10,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lato"
     />
-    <link rel="stylesheet" href="style/rstyle.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -42,18 +41,16 @@
         <a href="#about" class="w3-bar-item w3-button w3-hide-small"
           ><i class="fa fa-user"></i> ABOUT</a
         >
-        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"
+        <a href="#board-members" class="w3-bar-item w3-button w3-hide-small"
           ><i class="fa fa-th"></i> BOARD</a
         >
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
+        <a href="#events" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-calendar"></i> EVENTS</a
+        >
+        <a href="#contact-section" class="w3-bar-item w3-button w3-hide-small"
           ><i class="fa fa-envelope"></i> CONTACT</a
         >
-        <a
-          href="#"
-          class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"
-        >
-          <i class="fa fa-search"></i>
-        </a>
+        
       </div>
 
       <!-- Navbar on small screens -->
@@ -68,13 +65,19 @@
           >ABOUT</a
         >
         <a
-          href="#portfolio"
+          href="#board-members"
           class="w3-bar-item w3-button"
           onclick="toggleFunction()"
-          >PORTFOLIO</a
+          >BOARD</a
         >
         <a
-          href="#contact"
+          href="#events"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >EVENTS</a
+        >
+        <a
+          href="#contact-section"
           class="w3-bar-item w3-button"
           onclick="toggleFunction()"
           >CONTACT</a
@@ -149,8 +152,6 @@
           </p>
         </div>
       </div>
-
-      
     </div>
     <!--  -->
     <div class="w3-row w3-center blue w3-dark-grey w3-padding-16 test">
@@ -189,8 +190,8 @@
       </div>
     </div>
 
-    <!-- Container (Portfolio Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <!-- Container (Board Members Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="board-members">
       <h3 class="w3-center blue">OUR BOARD</h3>
       <hr />
       <p class="w3-center">
@@ -206,7 +207,7 @@
           <div class="numbertext">1 / 7</div>
           <img
             src="assets/profile-image-placeholder.png"
-            style="width: 50%; height: 70vh; margin: auto; display: block"
+            style="width: 50%; height: auto; margin: auto; display: block"
           />
           <div class="text">
             <p class="blue">Maria Soter</p>
@@ -218,7 +219,7 @@
           <div class="numbertext">2 / 7</div>
           <img
             src="assets/profile-image-placeholder.png"
-            style="width: 50%; height: 70vh; margin: auto; display: block"
+            style="width: 50%; height: auto; margin: auto; display: block"
           />
           <div class="text">
             <p class="blue">Carolyn Christensen</p>
@@ -230,7 +231,7 @@
           <div class="numbertext">3 / 7</div>
           <img
             src="assets/profile-image-placeholder.png"
-            style="width: 50%; height: 70vh; margin: auto; display: block"
+            style="width: 50%; height: auto; margin: auto; display: block"
           />
           <div class="text">
             <p class="blue">Blithe Cravens</p>
@@ -244,7 +245,7 @@
           <div class="numbertext">4 / 7</div>
           <img
             src="assets/profile-image-placeholder.png"
-            style="width: 50%; height: 70vh; margin: auto; display: block"
+            style="width: 50%; height: auto; margin: auto; display: block"
           />
           <div class="text">
             <p class="blue">Karlyn Smith</p>
@@ -256,7 +257,7 @@
           <div class="numbertext">5 / 7</div>
           <img
             src="assets/profile-image-placeholder.png"
-            style="width: 50%; height: 70vh; margin: auto; display: block"
+            style="width: 50%; height: auto; margin: auto; display: block"
           />
           <div class="text">
             <p class="blue">Michael Robbins</p>
@@ -268,7 +269,7 @@
           <div class="numbertext">6 / 7</div>
           <img
             src="assets/profile-image-placeholder.png"
-            style="width: 50%; height: 70vh; margin: auto; display: block"
+            style="width: 50%; height: auto; margin: auto; display: block"
           />
           <div class="text">
             <p class="blue">Tiffany Papageorge</p>
@@ -280,7 +281,7 @@
           <div class="numbertext">7 / 7</div>
           <img
             src="assets/profile-image-placeholder.png"
-            style="width: 50%; height: 70vh; margin: auto; display: block"
+            style="width: 50%; height: auto; margin: auto; display: block"
           />
           <div class="text">
             <p class="blue">Connie Wange</p>
@@ -306,14 +307,36 @@
       </div>
     </div>
 
-    <!-- Third Parallax Image with Portfolio Text -->
+     <!-- Fourth Parallax Image with Portfolio Text -->
+     <div class="bgimg-4 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span
+          class="
+            w3-center
+            w3-padding-large
+            w3-dark-gray
+            w3-xlarge
+            w3-wide
+            w3-animate-opacity
+          "
+          >Events</span
+        >
+      </div>
+    </div>
+
+    <!--Container (Event Section)-->
+    <section id="calendar" class="w3-container w3-center">
+      <div id="eventDiv" class="w3-row w3-padding w3-center"></div>
+    </section>
+    
+    <!-- Fourth Parallax Image with Portfolio Text -->
     <div class="bgimg-3 w3-display-container w3-opacity-min">
       <div class="w3-display-middle">
         <span
           class="
             w3-center
             w3-padding-large
-            w3-black
+            w3-dark-grey
             w3-xlarge
             w3-wide
             w3-animate-opacity
@@ -368,7 +391,11 @@
 
         <div class="w3-col m12 l8 w3-center w3-section w3-mobile">
           <h3 id="thank-you" class="w3-center w3-hide">Thank you!</h3>
-          <form method="post" action="/componets/contact-form.php" id="contact-form">
+          <form
+            method="post"
+            action="/componets/contact-form.php"
+            id="contact-form"
+          >
             <div class="w3-row w3-padding">
               <div class="w3-half w3-padding-small">
                 <input
@@ -435,7 +462,7 @@
               />
               <label>Request more information</label>
             </div>
-            <button class="w3-button w3-black w3-section" type="submit">
+            <button class="w3-button w3-dark-gray w3-section" type="submit">
               <i class="fa fa-paper-plane"></i> SEND MESSAGE
             </button>
           </form>
@@ -465,45 +492,5 @@
       </div>
     </footer>
 
-    <script>
-      // Modal Image Gallery
-      function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-      }
-
-      // Change style of navbar on scroll
-      window.onscroll = function () {
-        myFunction();
-      };
-      function myFunction() {
-        var navbar = document.getElementById("myNavbar");
-        if (
-          document.body.scrollTop > 100 ||
-          document.documentElement.scrollTop > 100
-        ) {
-          navbar.className =
-            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-        } else {
-          navbar.className = navbar.className.replace(
-            " w3-card w3-animate-top w3-white",
-            ""
-          );
-        }
-      }
-
-      // Used to toggle the menu on small screens when clicking on the menu button
-      function toggleFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else {
-          x.className = x.className.replace(" w3-show", "");
-        }
-      }
-    </script>
   </body>
 </html>
-

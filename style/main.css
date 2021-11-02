@@ -1,19 +1,33 @@
-* {box-sizing:border-box}
+@import "rstyle.css";
 
-ody,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat ", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-
+/*variables*/
+:root{
+  --primary-blue: #8ae3da;
 }
 
 
-#myNavbar{
-color:lightblue;
+* {
+  box-sizing: border-box;
+}
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat ", sans-serif;
+}
+body,
+html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
 
-
+#myNavbar {
+  color: lightblue;
 }
 
 html {
@@ -21,16 +35,14 @@ html {
 }
 
 #home {
-background-color: white;
-
-
-
-
-
+  background-color: white;
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,7 +51,7 @@ background-color: white;
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('../assets/sharon-mccutcheon-O2u6gA2esAI-unsplash-min.jpg');
+  background-image: url("../assets/sharon-mccutcheon-O2u6gA2esAI-unsplash-min.jpg");
   min-height: 100%;
 }
 
@@ -55,8 +67,18 @@ background-color: white;
   min-height: 400px;
 }
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+/* Fourth image (Contact) */
+.bgimg-4 {
+  background-image: url("../assets/image8.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {
+  letter-spacing: 10px;
+}
+.w3-hover-opacity {
+  cursor: pointer;
+}
 
 /* Turn off parallax scrolling for tablets and phones 
 @media only screen and (max-device-width: 1600px) {
@@ -69,7 +91,7 @@ background-color: white;
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  
+
   position: relative;
   margin: auto;
 }
@@ -80,7 +102,8 @@ background-color: white;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -102,8 +125,9 @@ background-color: white;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -138,7 +162,8 @@ background-color: white;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -151,11 +176,21 @@ background-color: white;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
+
