@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
-body, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat' !important;
+/* #8ae3da - bluegrey #f2a03d - orange */
+p {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: black;
+}
+h3 {
+    font-size: 2.3rem;
 }
 
-
-/* #8ae3da - bluegrey #f2a03d - orange */
 
 body {
     background-color: white;
 }
 .blue {
-    color: #8ae3da;
+    color: rgb(171, 208, 209);
     text-shadow: 0px 1px 1px #497a75;
 
 }
@@ -21,9 +25,66 @@ body {
 
 }
 .test {
-    background-color: #8ae3da;
+    background-color: rgb(171, 208, 209);
 }
-.alt-blue, .alt-blue-hover:hover{color:#fff!important;background-color:#8ae3da}
+.alt-blue, .alt-blue-hover:hover{color:#fff!important;background-color:rgb(171, 208, 209)}
 .faded {
     color:rgb(63, 61, 61)
 }
+.glass {
+    background: rgba( 0, 0, 0, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+.glass-darker {
+    background: rgba( 0, 0, 0, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+.sammy_header {
+    width: 50vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
