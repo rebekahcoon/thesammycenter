@@ -12,6 +12,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
+  <link rel="stylesheet" href="webfontkit-20211025-211214/stylesheet.css">
   <script src="src/main.js"></script>
   </head>
 
@@ -80,10 +81,8 @@
 
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-      <div class="w3-display-middle" style="white-space: nowrap">
-        <span
-          class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"
-          >THE <span class="">SAMMY</span> CENTER</span
+      <div class="w3-display-middle glass" style="white-space: nowrap">
+        <span class="w3-center w3-padding-large  w3-xlarge w3-wide  blue w3-animate-opacity" style="font-family: 'robgravesmedium';">THE <span> <img src="assets/thesammycenter_header-removebg-preview.png" class="sammy_header"></span> CENTER</span
         >
       </div>
     </div>
@@ -113,40 +112,32 @@
         </div>
       </div>
       
-      <p class="w3-large w3-center w3-padding-16 faded"> <em>We are really good at:</em></p>
-      <p class="w3-wide blue"><i class="fa fa-camera blue"></i>Nuturing</p>
-      <div class="w3-light-grey">
-        <div
-          class="w3-container w3-padding-small w3-dark-grey w3-center "
-          style="width: 90%">
-          <p class="blue">90%</p>
+      <div class="row">
+        <div class="column">
+          <img src="assets/markus-spiske-OO89_95aUC0-unsplash.jpg">
+        </div>
+        <div class="column">
+          <p class="orange" style="text-align: center;">placeholder text</p>
+          <img src="assets/ben-white-4K2lIP0zc_k-unsplash.jpg">
+        </div>
+        <div class="column">
+          <img src="assets/gautam-arora-OVDtgUhUPBY-unsplash.jpg">
+          <p class="orange" style="text-align: center;">placeholder text</p>
+        </div>
+        <div class="column">
+          <img src="assets/taylor-heery-p4zNAyza9_o-unsplash.jpg">
         </div>
       </div>
-      <p class="w3-wide blue"><i class="fa fa-laptop blue"></i>Loving</p>
-      <div class="w3-light-grey">
-        <div
-          class="w3-container w3-padding-small w3-dark-grey w3-center"
-          style="width: 85%">
-          <p class="blue">85%</p>
-        </div>
-      </div>
-      <p class="w3-wide blue"><i class="fa fa-photo blue"></i>Caring</p>
-      <div class="w3-light-grey">
-        <div
-          class="w3-container w3-padding-small w3-dark-grey w3-center"
-          style="width: 75%">
-          <p class="blue">75%</p>
-        </div>
-      </div>
+      
     </div>
     <!--  -->
     <div class="w3-row w3-center blue w3-dark-grey w3-padding-16 test">
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge blue">2</span><br />
+        <span class="w3-xlarge orange">2</span><br />
         <p class="blue">Teachers</p>
       </div> 
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge blue">1</span><br />
+        <span class="w3-xlarge orange">1</span><br />
         <p class="blue">Behavior Specialist</p>
       </div>
       <div class="w3-quarter w3-section">
@@ -154,15 +145,15 @@
         <p class="blue">Classes</p>
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge blue">100%</span><br />
+        <span class="w3-xlarge orange">100%</span><br />
         <p class="blue">Committed</p>
       </div>
     </div>
 
     <!-- Second Parallax Image with Portfolio Text -->
     <div class="bgimg-2 w3-display-container w3-opacity-min" >
-      <div class="w3-display-middle">
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">HOW WE SUCCEED</span>
+      <div class="w3-display-middle glass-darker">
+        <span class="w3-center w3-padding-large w3-xlarge w3-wide blue w3-animate-opacity" style="font-family: 'robgravesmedium';">HOW WE SUCCEED</span>
       </div>
     </div>
 
@@ -171,10 +162,8 @@
       <h3 class="w3-center blue">OUR BOARD</h3>
       <hr>
       <p class="w3-center">
-        <em
-          >Here are our board members.<br />
-          Click on the images to learn more</em
-        >
+        <em>Here are our board members.<br />
+          Click on the images to learn more</em>
       </p>
       <!-- Slideshow container -->
       <div class="slideshow-container">
@@ -243,8 +232,8 @@
         </div>
 
         <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+        <a class="next" onclick="plusDivs(1)">&#10095;</a>
       </div>
       <br />
 
@@ -261,7 +250,7 @@
     </div>
 
     <!-- Modal for full size images on click-->
-    <div
+    <!-- <div
       id="modal01"
       class="w3-modal w3-black"
       onclick="this.style.display='none'"
@@ -277,18 +266,16 @@
           w3-animate-zoom
           w3-center
           w3-transparent
-          w3-padding-64
-        "
-      >
+          w3-padding-64" >
         <img id="img01" class="w3-image" />
         <p id="caption" class="w3-opacity w3-large"></p>
       </div>
-    </div>
+    </div> -->
 
     <!-- Third Parallax Image with Portfolio Text -->
     <div class="bgimg-3 w3-display-container w3-opacity-min">
-      <div class="w3-display-middle">
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CONTACT</span>
+      <div class="w3-display-middle glass-darker">
+        <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity blue" style="font-family: 'robgravesmedium';">CONTACT</span>
       </div>
     </div>
 
