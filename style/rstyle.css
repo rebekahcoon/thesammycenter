@@ -84,3 +84,22 @@ body {
       max-width: 100%;
     }
   }
+  .header-background {
+    background-image: url('../assets/cropped-blackboard.jpg');
+  }
+  .header-background {
+    height: auto;
+    width: auto;
+   }
+  .body-background {
+    background-image:url(../assets/annie-spratt-DJUZjUYsLwQ-unsplash.jpg);
+    border-radius: 10px;
+    border: 1px solid rgb(171, 208, 209);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    padding-bottom: 15px;
+    padding: 15px;
+  }
+  .body-text {
+    color: white;
+  }
