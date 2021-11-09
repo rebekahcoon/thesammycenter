@@ -7,9 +7,14 @@ p {
 h3 {
     font-size: 2.3rem;
 }
-body {
-    background-color: rgb(141, 143, 145);
-    
+:root {
+  /* background: rgb(205,205,205); */
+  background:  #3c6478;
+}
+.first-background {
+  background-image: linear-gradient(black, #3c6478);
+  background-size: cover;
+  min-height: 100%;
 }
 .blue {
     color: rgb(171, 208, 209);
@@ -60,7 +65,7 @@ body {
   .column {
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 0 8px;
   }
   
   .column img {
@@ -98,8 +103,42 @@ body {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 3px );
     padding-bottom: 15px;
-    padding: 15px;
+    padding: 30px;
   }
   .body-text {
     color: white;
+    text-shadow: 0px 1px 1px #0f0f0f;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 2.2;
   }
+  .grid-container {
+    display: inline-grid;
+    grid-template-columns: 30% 40% 30%;
+    position: relative;
+    text-align: center;
+
+    
+  }
+  .grid-item {
+    border: 1px solid rgb(171, 208, 209);
+    background-image: url(../assets/annie-spratt-DJUZjUYsLwQ-unsplash.jpg);
+    padding:20px;
+    margin: 15px;
+    border-radius: 10px;
+   height: max-content;
+    
+  }
+  .zoom {
+    transition: transform .2s;
+  }
+  .zoom:hover {
+    transform: scale(1.1);
+  }
+.board-text {
+  color: white;
+  text-align: center;
+}
+.rounded {
+  border-radius: 10px;
+}
