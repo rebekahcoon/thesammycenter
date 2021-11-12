@@ -22,13 +22,13 @@
 
 /*variables*/
 :root {
-  --middle-blue-green: #8ae3daff;
+--middle-blue-green: #8ae3daff;
 --red-crayola: #FE5F55ff;
 --blue-sapphire: #3c6478ff;
 --naples-yellow: #f9dc5cff;
 --dark-purple: #4b1d3fff;
 
-  background-image:url("../assets/annie-spratt-DJUZjUYsLwQ-unsplash.jpg");
+  background-image:url("../assets/mick-haupt-pqYVbw4xrFU-unsplash.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -265,14 +265,14 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  border-radius: 4%;
+  border-radius: 1rem;
 }
 
 .giveHandImg2 {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../assets/talent.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 4%;
+  border-radius: 1rem;
   background-position: bottom;
 }
 
@@ -283,11 +283,16 @@ ul {
   border-radius: 1rem;
 }
 
-
+.frosted {
+  background-color: rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(10px) saturate(100%) contrast(30%) brightness(80%);
+-webkit-backdrop-filter: blur(20px) saturate(100%) contrast(30%) brightness(80%);
+border-radius: 10px; 
+}
 
 input::placeholder,
 textarea::placeholder{
-  color:var(--naples-yellow);
+  color:var(--dark-purple);
 }
 
 .glass-form {
@@ -336,37 +341,20 @@ flex .col {
   align-items: center;
   width:100%;
 }
-.col-large{
+
+.item-3 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width:100%;  
+  row-gap: 1rem;
 }
-/**
- * Make cols flexible to
- * auto push button at the
- * col bottom.
- */
-.col {
-	display: flex;
-  flex-direction: column;
-  align-items: center;
+
+
+
+#accordionItemOne > p {
+  color:white;
+  text-align: left;
   
-}
-
-
-
-/**
- * Margin-top auto pushes
- * button to bottom.
- * Align self makes button
- * stuck to the left.
- */
-
-/**
- * Under 900px wrap cols
- */
-@media (max-width: 900px) {
-	.flex {
-		flex-wrap: wrap;
-	}
 }
