@@ -92,39 +92,4 @@ async function postData(formattedFormData) {
   thankYouMsg.classList.remove("w3-hide");
 }
 
-// Event fetch from JSON and dynamically create cards
 
-const eventSection = document.getElementById("eventDiv");
-fetch("/src/events.json")
-  .then((x) => x.json())
-  .then((y) => data(y));
-
-function data(el) {
-  let { events } = el;
-
-  for (const event of events) {
-    var inputDate = new Date(event.date);
-    var options = { dateStyle: "full" };
-    var fullDate = new Intl.DateTimeFormat("en-US", options).format(inputDate);
-
-    const divEvent = document.createElement("div");
-    divEvent.innerHTML = `<div
-          class="w3-col m12 l12 w3-card w3-section w3-padding w3-border-dark-gray w3-leftbar"
-        >
-          <header class="w3-container w3-dark-gray w3-wide">
-            <h3 class="blue w3-left">${event.title}</h3><span class="blue w3-right w3-medium">${fullDate}</span>
-          </header>
-
-          <div class="w3-container">
-            <p>${event.description}</p>
-            
-          </div>
-
-          <footer class="w3-container w3-dark-gray">
-            <h5 class="blue w3-left"><a href="">Join Event<i class="fa fa-pencil  w3-margin-left"></i></i></a></h5><span class="blue w3-right w3-medium w3-wide">${event.location}</span>
-          </footer>
-        </div>`;
-
-    eventSection.appendChild(divEvent);
-  }
-}

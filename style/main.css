@@ -1,13 +1,76 @@
 @import "rstyle.css";
 
-/*variables*/
-:root{
-  --primary-blue: #8ae3da;
-}
+ 
+/* 
+--middle-blue-green: #8ae3daff;
+--red-crayola: #ed254eff;
+--blue-sapphire: #3c6478ff;
+--naples-yellow: #f9dc5cff;
+--dark-purple: #4b1d3fff;
 
+
+--middle-blue-green: hsla(174, 61%, 72%, 1);
+--red-crayola: hsla(348, 85%, 54%, 1);
+--blue-sapphire: hsla(200, 33%, 35%, 1);
+--naples-yellow: hsla(49, 93%, 67%, 1);
+--dark-purple: hsla(316, 44%, 20%, 1);
+ --primary:var(--middle-blue-green) 
+ */
+
+
+
+
+/*variables*/
+:root {
+  --middle-blue-green: #8ae3daff;
+--red-crayola: #FE5F55ff;
+--blue-sapphire: #3c6478ff;
+--naples-yellow: #f9dc5cff;
+--dark-purple: #4b1d3fff;
+
+  background-image:url("../assets/annie-spratt-DJUZjUYsLwQ-unsplash.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
 
 * {
   box-sizing: border-box;
+}
+
+.bg-primary-blue{
+  background-color: var(--middle-blue-green);
+}
+
+.bg-purple{
+  background-color: var(--dark-purple);
+}
+.bg-red{
+  background-color: var(--red-crayola);
+}
+.bg-yellow{
+  background-color: var(--naples-yellow);
+}
+.bg-secondary-blue{
+  background-color: var(--blue-sapphire);
+}
+
+.text-primary-blue{
+  color: var(--middle-blue-green);
+}
+.text-yellow{
+  color:var(--naples-yellow);
+}
+.text-red{
+  color:var(--red-crayola);
+}
+.text-purple{
+  color:var(--dark-purple);
+}
+.text-secondary-blue{
+  color:var(--blue-sapphire);
 }
 
 body,
@@ -22,7 +85,7 @@ h6 {
 body,
 html {
   height: 100%;
-  color: #777;
+  
   line-height: 1.8;
 }
 
@@ -58,7 +121,7 @@ html {
 /* Second image (Portfolio) */
 .bgimg-2 {
   background-image: url("../assets/nathan-dumlao-P5MXtYfgmmw-unsplash-min.jpg");
-  min-height: 400px;
+  min-height: 800px;
 }
 
 /* Third image (Contact) */
@@ -193,4 +256,117 @@ html {
   }
 }
 
+ul {
+  list-style: none;
+}
 
+.giveHandImg1 {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../assets/giveHand.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: 4%;
+}
+
+.giveHandImg2 {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../assets/talent.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4%;
+  background-position: bottom;
+}
+
+.giveHandImg3 {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("../assets/treasure.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+
+
+
+input::placeholder,
+textarea::placeholder{
+  color:var(--naples-yellow);
+}
+
+.glass-form {
+  background: rgba( 0, 0, 0, 0.55 );
+  box-shadow: 0 8px 12px 0 rgba( 97,97,97, 0.35 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
+}
+
+flex .col {
+	width: 100%;
+	height: auto;
+}
+
+/**
+ * Make .flex children same
+ * height using display flex.
+ * Justify property prepares
+ * cols for being centered.
+ */
+.flex {
+	display: flex;
+	justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-content: stretch;
+  
+}
+
+.item-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+.item-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+.col-large{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/**
+ * Make cols flexible to
+ * auto push button at the
+ * col bottom.
+ */
+.col {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+
+/**
+ * Margin-top auto pushes
+ * button to bottom.
+ * Align self makes button
+ * stuck to the left.
+ */
+
+/**
+ * Under 900px wrap cols
+ */
+@media (max-width: 900px) {
+	.flex {
+		flex-wrap: wrap;
+	}
+}
