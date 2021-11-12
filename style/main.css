@@ -3,6 +3,7 @@
 /*variables*/
 :root{
   --primary-blue: #8ae3da;
+  background-color: #4c9eaa;
 }
 
 
@@ -26,16 +27,34 @@ html {
   line-height: 1.8;
 }
 
+#abtp {text-align: center;}
+
+#misp {text-align: center;}
+
 #myNavbar {
-  color: lightblue;
+  color: white;
+  background-color:  #6a93cb;
+   linear-gradient:(315deg, #6a93cb 0%, #a4bfef 74%);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+
+
 #home {
-  background-color: white;
+  
+
+  
+}
+
+body{}
+
+#about{
+  
+ 
+
 }
 
 /* Create a Parallax Effect */
