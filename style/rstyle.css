@@ -9,26 +9,38 @@ h3 {
 }
 :root {
   /* background: rgb(205,205,205); */
-  background:  #3c6478;
+  /* background:  #3c6478; */
+  background-image: url(../assets/mick-haupt-pqYVbw4xrFU-unsplash\ \(1\).jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
-.first-background {
+/* .first-background {
   background-image: linear-gradient(black, #3c6478);
   background-size: cover;
   min-height: 100%;
-}
+} */
 .blue {
-    color: rgb(171, 208, 209);
+    color: #4C9EAA;
     text-shadow: 0px 1px 1px #497a75;
 
 }
-.orange {
-    color: #f2a03d;
-
+.dark-blue {
+  color:#3c6478;
 }
-.test {
-    background-color: rgb(171, 208, 209);
+.pink {
+  color:#ed254e;
 }
-.alt-blue, .alt-blue-hover:hover{color:#fff!important;background-color:rgb(171, 208, 209)}
+.yellow {
+  color:#f9dc5c
+}
+.purple {
+  color:#4b1d3f;
+}
+.alt-blue, .alt-blue-hover:hover{color:#fff!important;background-color:#4C9EAA}
 .faded {
     color:rgb(63, 61, 61)
 }
@@ -38,7 +50,7 @@ h3 {
     backdrop-filter: blur( 3px );
     -webkit-backdrop-filter: blur( 3px );
     border-radius: 10px;
-    border: 1px solid rgb(171, 208, 209);
+    border: 1px solid #4C9EAA;
     
 }
 .glass-darker {
@@ -47,7 +59,7 @@ h3 {
     backdrop-filter: blur( 3px );
     -webkit-backdrop-filter: blur( 3px );
     border-radius: 10px;
-    border: 1px solid rgb(171, 208, 209);
+    border: 1px solid #4C9EAA;
     
 }
 .sammy_header {
@@ -99,7 +111,7 @@ h3 {
   .body-background {
     background-image:url(../assets/annie-spratt-DJUZjUYsLwQ-unsplash.jpg);
     border-radius: 10px;
-    border: 1px solid rgb(171, 208, 209);
+    border: 1px solid #4C9EAA;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 3px );
     padding-bottom: 15px;
@@ -114,15 +126,23 @@ h3 {
   }
   .grid-container {
     display: inline-grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 50% 50%;
     position: relative;
     text-align: center;
-
-    
+  }
+  @media only screen and (max-width: 900px) {
+    .grid-container {
+    display: block;
+    grid-template-columns: auto;
+    position:relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    }
   }
   .grid-item {
-    border: 1px solid rgb(171, 208, 209);
-    background-image: url(../assets/annie-spratt-DJUZjUYsLwQ-unsplash.jpg);
+    border: 1px solid #4C9EAA;
+    
     padding:20px;
     margin: 15px;
     border-radius: 10px;
@@ -140,5 +160,47 @@ h3 {
   text-align: center;
 }
 .rounded {
+  border-radius: 10px;
+}
+.frosted {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px) saturate(100%) contrast(30%) brightness(80%);
+  -webkit-backdrop-filter: blur(20px) saturate(100%) contrast(30%) brightness(80%);
+  border-radius: 10px;
+  border: 1px solid #4b1d3f;
+}
+.frosted-opaque {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    
+}
+.a-content {
+  padding: 25px;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #3c6478;
+  cursor: pointer;
+  padding: 10px;
+  width: 80%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 16px;
+  border-radius: 10px;
+  font-family: inherit;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #4b1d3f;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;;
   border-radius: 10px;
 }
