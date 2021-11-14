@@ -92,12 +92,21 @@ async function postData(formattedFormData) {
   thankYouMsg.classList.remove("w3-hide");
 }
 
-function accordion(id) {
+function accordion(id,btnId) {
   var x = document.getElementById(id);
+  var btn = document.getElementById(btnId);
+  console.log(btn);
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else {
     x.className = x.className.replace(" w3-show", "");
   }
+
+  if (btn.className.indexOf("w3-block") == -1){
+    btn.className += " w3-block";
+  } else {
+    btn.className = btn.className.replace(" w3-block", "");
+  }
+
 }
 

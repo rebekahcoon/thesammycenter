@@ -22,7 +22,7 @@
 
 /*variables*/
 :root {
---middle-blue-green: #8ae3daff;
+--middle-blue-green: #4c9eaaff;
 --red-crayola: #FE5F55ff;
 --blue-sapphire: #3c6478ff;
 --naples-yellow: #f9dc5cff;
@@ -266,6 +266,7 @@ ul {
   background-repeat: no-repeat;
   background-position: bottom;
   border-radius: 1rem;
+  border: 2px solid var(--dark-purple);
 }
 
 .giveHandImg2 {
@@ -274,6 +275,7 @@ ul {
   background-repeat: no-repeat;
   border-radius: 1rem;
   background-position: bottom;
+  border: 2px solid var(--dark-purple);
 }
 
 .giveHandImg3 {
@@ -281,6 +283,7 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1rem;
+  border: 2px solid var(--dark-purple);
 }
 
 .frosted {
@@ -325,6 +328,7 @@ flex .col {
   row-gap: 10px;
   align-content: stretch;
   
+  
 }
 
 .item-1{
@@ -332,14 +336,14 @@ flex .col {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:100%;
+  width:90vw;
 }
 .item-2{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:100%;
+  width:90vw;
 }
 
 .item-3 {
@@ -347,14 +351,42 @@ flex .col {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:100%;  
+  width: 90vw;
   row-gap: 1rem;
 }
 
+.card-width{
+ width: 80%;
+}
+
+.middlepos{
+  position: relative;
+  top: 5px;
+  float: right;
+}
+
+ul{
+  padding-inline-start: 0;
+
+}
+
+li {
+  border: 5px solid var(--dark-purple);
+  margin: 0;
+}
 
 
-#accordionItemOne > p {
-  color:white;
-  text-align: left;
-  
+.card-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tag-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
