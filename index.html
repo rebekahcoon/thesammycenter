@@ -5,8 +5,8 @@
   <title>The Sammy Center</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="style/main.css" />
+<!--   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+ -->  <link rel="stylesheet" href="style/main.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="webfontkit-20211025-211214/stylesheet.css" />
@@ -31,7 +31,8 @@
       <a href="#home" class="w3-bar-item w3-button">HOME</a>
       <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
       <a href="#board-members" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BOARD</a>
-      <a href="#events" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-calendar"></i> EVENTS</a>
+      <a href="#get-involved" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-calendar"></i> GET INVOLVED</a>
+      <a href="#sponsorship" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-calendar"></i> SPONSOR A CHILD</a>
       <a href="#contact-section" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
 
@@ -39,7 +40,9 @@
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
       <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
       <a href="#board-members" class="w3-bar-item w3-button" onclick="toggleFunction()">BOARD</a>
-      <a href="#events" class="w3-bar-item w3-button" onclick="toggleFunction()">EVENTS</a>
+      <a href="#get-involved" class="w3-bar-item w3-button" onclick="toggleFunction()">GET INVOLVED</a>
+      <a href="#sponsorship" class="w3-bar-item w3-button" onclick="toggleFunction()">SPONSOR A CHILD</a>
+
       <a href="#contact-section" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
       <a href="#" class="w3-bar-item w3-button">SEARCH</a>
     </div>
@@ -267,7 +270,7 @@
 
 
   <!--Container (Event Section)-->
-  <section id="getInvolved" class="w3-container">
+  <section id="get-involved" class="w3-container">
 
     <div class="flex w3-margin">
 
@@ -491,9 +494,22 @@
         </div>
       </div>
   </section>
+  <!-- 4th Parallax -->
+  <div class="bgimg-3 w3-display-container">
+    <div class="w3-display-middle glass-darker">
+      <span class="
+            tag-flex w3-center w3-padding-large w3-xlarge w3-wide blue" style="font-family: 'robgravesmedium';">CONTACT
+        US</span>
+    </div>
+  </div>
+  
+  <!-- Sponsorship Section -->
+  <section id="sponsorship">
+    
+  </section>
 
 
-  <!--4th Parallax-->
+  <!--5th Parallax-->
   <div class="bgimg-3 w3-display-container">
     <div class="w3-display-middle glass-darker">
       <span class="
@@ -505,12 +521,12 @@
 
   <!-- Container (Contact Section) -->
   <div class="w3-container w3-padding-64" id="contact-section">
-    <div class="w3-container frosted w3-center">
+    <div class="w3-container frosted border-purple">
       <p class="w3-center text-yellow w3-xlarge"><em>We'd love your help or insight!</em></p>
     </div>
 
-    <div class="w3-row-padding">
-      <div class="w3-col m12 l4 w3-center frosted w3-section w3-mobile">
+    <div class="w3-row w3-section">
+      <div class="w3-third w3-center w3-padding-small frosted w3-mobile border-purple">
         <div class="w3-large w3-padding w3-text-white">
           <i class="
                 fa fa-map-marker fa-fw
@@ -530,10 +546,10 @@
         </div>
       </div>
 
-      <div class="w3-col m12 l8 w3-center w3-section w3-mobile">
+      <div class="w3-twothird w3-center w3-padding-small w3-mobile">
         <h3 id="thank-you" class="w3-center w3-hide">Thank you!</h3>
-        <form method="post" action="/componets/contact-form.php" id="contact-form" class="frosted" ;>
-          <div class="w3-row w3-padding">
+        <form method="post" action="/componets/contact-form.php" id="contact-form" class="frosted border-purple">
+          <div class="w3-row w3-padding-small">
             <div class="w3-half w3-padding-small">
               <input class="w3-input w3-transparent" type="text" placeholder="First Name" required name="fName" />
             </div>
@@ -541,12 +557,12 @@
               <input class="w3-input w3-transparent" type="text" placeholder="Last Name" required name="lName" />
             </div>
           </div>
-          <div class="w3-row w3-padding">
+          <div class="w3-row w3-padding-small">
             <div class="w3-col w3-padding-small">
               <input class="w3-input w3-transparent" type="email" placeholder="Email" required name="Email" />
             </div>
           </div>
-          <div class="w3-row w3-padding">
+          <div class="w3-row w3-padding-small">
             <div class="w3-col w3-padding-small">
               <textarea class="w3-input w3-transparent" type="text" placeholder="Message" required
                 name="Message"></textarea>
