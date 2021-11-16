@@ -3,6 +3,7 @@
 /*variables*/
 :root{
   --primary-blue: #8ae3da;
+  background-color: #4c9eaa;
 }
 
 
@@ -26,16 +27,63 @@ html {
   line-height: 1.8;
 }
 
+#abtp {text-align: center;}
+
+#misp {text-align: center;}
+
 #myNavbar {
-  color: lightblue;
+  color: black;
+  background-color:  #f2a03d;
+
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+
+
+
+/* navbar hover animation  */
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 6px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(5);
+  transform-origin: bottom left;
+}
+
+
+
 #home {
-  background-color: white;
+  
+
+  
+}
+
+body{}
+
+#about{
+  
+ 
+
 }
 
 /* Create a Parallax Effect */
